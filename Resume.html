@@ -27,10 +27,42 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
             overflow: hidden;
         }
+        @page {
+            size: A4 portrait;
+            margin: 0;
+        }
+        @media print {
+            body{
+                background-color: transparent;
+                padding: 0;
+            }
+            .page{
+                width: 210mm;
+                min-height: 297mm;
+                margin: 0;
+                box-shadow: none;
+                page-break-after: always;
+            }
+        
+        }
     </style>
 </head>
 
 <body>
+    <div class="page">
+        <table>
+            <tr>
+                <td></td>
+        
+       <h1>M SHIVRAJ</h1>
+       
+       <h4>BCA | Cloud & DevOps Enthusiast</h4>
+       <br>
+            </td>
+            </tr>
+        </table>
+
+       <p><i>www.linkedin.com/in/m-shivraj</i></p>
     
 </body>
 </html>
